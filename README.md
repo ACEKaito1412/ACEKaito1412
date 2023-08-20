@@ -18,3 +18,4 @@ I believe that coding is akin to magic – the power to create something fascina
 - 📚 **Sci-Fi Books:** Sci-fi and fantasy books allow me to venture into imaginative realms and expand my creative horizons.
 - ✨ **Coding Magic:** Just like a magician, I'm weaving spells of code to create exciting projects.
 
+![ACEKaito's GitHub stats](https://github-readme-stats.vercel.app/api?username=ACEKaito1412\&include_all_commits=true\&bg_color=30,e96443,904e95\&title_color=fff\&text_color=fff\&rank_icon=github)

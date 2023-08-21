@@ -18,4 +18,10 @@ I believe that coding is akin to magic – the power to create something fascina
 - 📚 **Sci-Fi Books:** Sci-fi and fantasy books allow me to venture into imaginative realms and expand my creative horizons.
 - ✨ **Coding Magic:** Just like a magician, I'm weaving spells of code to create exciting projects.
 
-![ACEKaito's GitHub stats](https://github-readme-stats.vercel.app/api?username=ACEKaito1412\&include_all_commits=true\&bg_color=30,e96443,904e95\&title_color=fff\&text_color=fff\&rank_icon=github)
+
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=ACEKaito1412&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=ACEKaito1412&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=ACEKaito1412&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+</div>

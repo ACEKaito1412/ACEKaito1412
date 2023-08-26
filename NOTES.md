@@ -16,3 +16,4 @@
 3. **List**
    - [`Huge list of Massive Courses to Becomming Data Scienctist`](https://www.kaggle.com/learn)
    - [`Roadmap to becoming AI and Data Scientist`](https://roadmap.sh/ai-data-scientist)
+   - ['Self Taught Programmer'](https://www.youtube.com/watch?v=Hb9LBqnXKvo)

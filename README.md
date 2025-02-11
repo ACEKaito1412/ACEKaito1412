@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/3ea55a97-b59a-48ce-af33-761f4e069735)# Welcome to My Repositories! 👋
 
 Hello there! I'm Jhun Carlo, a software developer with a strong interest in machine learning, game development and reading books. 🚀📚
-- 📪 [Gmail](jhuncarlomacdon@gmail.com)
+- 📪 jhuncarlomacdon@gmail.com
 - 🔗 [LinkedIn](https://www.linkedin.com/in/macdon-jhun-carlo-34670a26b)
 
 ## About Me

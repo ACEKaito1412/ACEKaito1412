@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3ea55a97-b59a-48ce-af33-761f4e069735)# Welcome to My Repositories! 👋
+# Welcome to My Repositories! 👋
 
 Hello there! I'm Jhun Carlo, a software developer with a strong interest in machine learning, game development and reading books. 🚀📚
 - 📪 jhuncarlomacdon@gmail.com

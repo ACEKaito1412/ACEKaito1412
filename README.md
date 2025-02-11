@@ -15,7 +15,7 @@ I believe that coding is akin to magic – the power to create something fascina
 
 ## Interests
 
-- ✨ **Coding** Love the process on finding and fixing bugs, just pure satisfaction.
+- ✨ **Coding:** Love the process on finding and fixing bugs, just pure satisfaction.
 - 🤖 **Machine Learning:** Currently re-learning some of python basic, and I set a 100 days codingcchallenge in python for my self.
 - 🎮 **Game Development:** I wasn't able to create one project myself yet, but still very interested
 - 📚 **Sci-Fi Books:** Sci-fi and fantasy books allow me to and expand my creative horizons.

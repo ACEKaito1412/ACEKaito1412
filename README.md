@@ -1,6 +1,8 @@
-# Welcome to My Repositories! 👋
+![image](https://github.com/user-attachments/assets/3ea55a97-b59a-48ce-af33-761f4e069735)# Welcome to My Repositories! 👋
 
 Hello there! I'm Jhun Carlo, a software developer with a strong interest in machine learning, game development and reading books. 🚀📚
+- 📪 [Gmail](jhuncarlomacdon@gmail.com)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/macdon-jhun-carlo-34670a26b)
 
 ## About Me
 
@@ -13,10 +15,10 @@ I believe that coding is akin to magic – the power to create something fascina
 
 ## Interests
 
+- ✨ **Coding** Love the process on finding and fixing bugs, just pure satisfaction.
 - 🤖 **Machine Learning:** Currently re-learning some of python basic, and I set a 100 days codingcchallenge in python for my self.
 - 🎮 **Game Development:** I wasn't able to create one project myself yet, but still very interested
 - 📚 **Sci-Fi Books:** Sci-fi and fantasy books allow me to and expand my creative horizons.
-- ✨ **Coding Magic:** Just like a magician, I'm weaving spells of code to create exciting projects.
 
 
 

@@ -18,7 +18,13 @@
     />
     <style>
       body {
-        background-color: #363741;
+        /* background-color: #363741; */
+        background: radial-gradient(
+          circle,
+          rgba(11, 0, 36, 1) 0%,
+          rgba(9, 56, 121, 1) 78%,
+          rgba(36, 10, 156, 1) 100%
+        );
       }
 
       * {
@@ -71,6 +77,34 @@
         grid-template-rows: 1fr 1fr;
       }
 
+      #particle-container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .particle {
+        position: absolute;
+        z-index: -1;
+        width: 100px; /* Changed from 100px to 10px */
+        height: 100px; /* Changed from 100px to 10px */
+        background-color: #dedede0e;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        animation: particle-animation 1s ease-out forwards; /* Added animation */
+      }
+
+      @keyframes particle-animation {
+        0% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.5); /* Fade out and shrink */
+        }
+      }
+
       @media (min-width: 319px) and (max-width: 480px) {
         .tech-container {
           grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -79,7 +113,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="particle-container">
     <section>
       <nav class="container navbar navbar-expand-lg mb-sm-3">
         <div class="container-fluid mx-5">
@@ -236,16 +270,16 @@
         </div>
         <div class="col-lg-6 col-sm-12" id="work">
           <div
-            class="d-flex row p-4 gap-2 py-md-2 align-items-center justify-content-center" id="work-container"
-          >
-          </div>
+            class="d-flex row p-4 gap-2 py-md-2 align-items-center justify-content-center"
+            id="work-container"
+          ></div>
         </div>
 
         <div class="col-lg-6 col-sm-12" id="certification">
           <div
-            class="d-flex row p-4 gap-2 py-md-2 align-items-center justify-content-center" id="cert-container"
-          >
-          </div>
+            class="d-flex row p-4 gap-2 py-md-2 align-items-center justify-content-center"
+            id="cert-container"
+          ></div>
         </div>
       </div>
     </section>
@@ -276,13 +310,13 @@
                 Filipino Sign Recognition Android Application
               </h5>
               <p
-                class="card-text text-secondary d-none d-md-block"
+                class="card-text text-secondary d-none d-md-block mt-2"
                 style="font-size: 12px"
               >
                 Android application that recognize Filipino sign language.
               </p>
               <div
-                class="d-flex flex-row flex-wrap gap-2 mt-3"
+                class="d-flex flex-row flex-wrap gap-2"
                 style="line-height: 2px"
               >
                 <p
@@ -324,13 +358,13 @@
             <div class="px-0 col m-3 row d-flex align-content-between">
               <h5 class="card-title">X-Change</h5>
               <p
-                class="card-text text-secondary d-none d-md-block"
+                class="card-text text-secondary d-none d-md-block mt-2"
                 style="font-size: 12px"
               >
                 Mobile wallet app project
               </p>
               <div
-                class="d-flex flex-row flex-wrap gap-2 mt-3"
+                class="d-flex flex-row flex-wrap gap-2"
                 style="line-height: 2px"
               >
                 <p class="fw-bold secondary-text" style="font-size: 13px">
@@ -366,13 +400,13 @@
             <div class="px-0 col m-3 row d-flex align-content-between">
               <h5 class="card-title">Resume-Ex</h5>
               <p
-                class="card-text text-secondary d-none d-md-block"
+                class="card-text text-secondary d-none d-md-block mt-2"
                 style="font-size: 12px"
               >
-                Api for resume extraction
+                Api for resume extraction using Spacy and OpenAI Api in Python.
               </p>
               <div
-                class="d-flex flex-row flex-wrap gap-2 mt-3"
+                class="d-flex flex-row flex-wrap gap-2"
                 style="line-height: 2px"
               >
                 <p class="fw-bold secondary-text" style="font-size: 13px">
@@ -392,35 +426,16 @@
         </div>
       </div>
     </section>
+
     <section class="container my-cont mb-4">
       <div class="container-fluid d-flex justify-content-center">
         <div class="col-9">
-          <p class="text-secondary text-end">Last Updated : March 5, 2025</p>
+          <p class="text-secondary text-end">Last Updated : March 18, 2025</p>
         </div>
       </div>
     </section>
-    <script>
-      const listId = ["work", "certification"];
 
-      function showDiv(id) {
-        if (id != "work") {
-          const div = document.getElementById(id);
-          const hide = document.getElementById(listId[0]);
-
-          div.style.display = "block";
-          hide.style.display = "none";
-        }
-
-        if (id != "certification") {
-          const div = document.getElementById(id);
-          const hide = document.getElementById(listId[1]);
-
-          div.style.display = "block";
-          hide.style.display = "none";
-        }
-      }
-
-      showDiv("work");
+    <script src="./data.js">
     </script>
     <script src="./script.js"></script>
     <script

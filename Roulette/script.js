@@ -45,11 +45,14 @@ function selectBet(amount) {
   } else {
     currentBet = amount;
   }
-
-  document
-    .querySelectorAll(".bet-btn")
-    .forEach((btn) => (btn.style.border = ""));
-  event.target.style.border = "3px solid blue";
+  
+  if (selectedColor != null){
+      document
+      .querySelectorAll(".bet-btn")
+      .forEach((btn) => (btn.style.border = ""));
+    event.target.style.border = "3px solid " + selectedColor;
+  }
+  
 }
 
 function updateScore() {
@@ -120,7 +123,7 @@ function spinWheel() {
       resultDiv.style.display = "flex";
       resultDiv.style.color = "red";
     }
-
+    updatePrevColor(resultColor);
     // Update balance
     document.getElementById("score").textContent = `$ ${balance}`;
 
@@ -129,6 +132,10 @@ function spinWheel() {
     spinBtn.disabled = false;
     document
       .querySelectorAll(".color-btn")
+      .forEach((btn) => (btn.style.border = ""));
+
+    document
+      .querySelectorAll(".bet-btn")
       .forEach((btn) => (btn.style.border = ""));
 
     setTimeout(() => {
@@ -146,5 +153,21 @@ function getRotationFromStyle(element) {
   return match ? parseFloat(match[1]) : 0;
 }
 
+function updatePrevColor(color){
+  const prevContainer = document.getElementById("prev_container");
+  const new_color = document.createElement('div')
+  new_color.classList.add('prev_color')
+  new_color.style.background = color;
+
+  if (prevContainer.children.length > 15){
+    // remove first child
+    const child = prevContainer.firstChild();
+    prevContainer.remove(child);
+  } else{
+    prevContainer.append(new_color);
+  }
+
+  
+}
 // Initialize the wheel
 createWheel();

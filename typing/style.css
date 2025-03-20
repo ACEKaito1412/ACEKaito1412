@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 95vh;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+.sql_text {
+  font-family: "Boldonse", system-ui;
+  font-variation-settings: "wdth" 100;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: lightskyblue; /* Text color */
+}
+
+#sql_input_area {
+  width: 480px;
+  height: 120px;
+  background: rgba(34, 35, 35, 0.676);
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#sql_input {
+  box-shadow: -3px 3px 17px 2px rgba(0, 0, 0, 0.4) inset;
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 460px;
+  height: 100px;
+  padding: 10px;
+}
+
+#sql_text {
+  padding: 15px;
+}
+
+#sql_typing_container {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  position: relative;
+}
+
+#sql_typing_logo {
+  width: 70px;
+  height: 70px;
+  background-color: wheat;
+  border-radius: 50%;
+  border: 5px solid black;
+  padding: 10px;
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+}
+
+#sql_info {
+  font-family: "Boldonse", system-ui;
+  font-size: 12px;
+  width: 250px;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  text-align: left;
+}
+
+#sql_button:active {
+  background-color: gray;
+}
+
+/* Apply the animation to the desired element */
+#sql_blinking {
+  height: 15px;
+  width: 15px;
+  border-bottom: 2px solid white;
+  animation: blink 2s infinite;
+  color: transparent;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

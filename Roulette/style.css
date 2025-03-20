@@ -45,13 +45,14 @@ body {
 
 .marker {
   position: absolute;
-  bottom: -10px;
-  left: 50%;
+  bottom: -5px;
+  left: 45%;
   transform: translateX(-50%);
   width: 15px;
   height: 20px;
-  background-color: gold;
+  background-color: rgb(255, 255, 255);
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  transform: rotate(10deg);
 }
 
 #controls {
@@ -62,14 +63,15 @@ body {
 }
 
 .color-btn {
-  padding: 10px 20px;
-  width: 80px;
+  width: 75px;
   margin: 5px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   border: 3px solid rgba(0, 0, 0, 0);
   cursor: pointer;
   font-weight: bold;
+  text-align: center;
 }
 
 #bet-container{
@@ -79,9 +81,9 @@ body {
 }
 
 .bet-btn {
+  width: 75px;
   margin: 5px;
-  padding: 10px 20px;
-  width: 80px;
+  padding: 10px 10px;
   background-color: transparent;
   border: 3px solid white;
   border-radius: 5px;
@@ -112,10 +114,10 @@ body {
   top: -58px;
   left: -2px;
   font-size: 20px;
-  background: rgba(125, 124, 123, 0.477);
+  background: transparent;
   padding: 10px 70px 10px 10px;
   border-radius: 10px 30px 0px 0px;
-  border: 2px solid rgba(71, 8, 149, 0.632);
+  border: 1px solid white;
 }
 
 #title {
@@ -135,4 +137,27 @@ body {
 #spin-btn:disabled {
   background-color: #666;
   cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  #wheel-container{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  #roulette_game{
+    justify-content: center;
+  }
+
+  #wheel{
+    width: 250px;
+    height: 250px;
+  }
+
+  #roulette_logo{
+    left: 0px;
+  }
 }

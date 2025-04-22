@@ -3,19 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <title>QR Code Reader from Image</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Boldonse&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik+Glitch&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+
+    body{
+      font-family: "Boldonse", system-ui;
+      font-variation-settings: "width" 100;
+      font-weight: 400;
+      font-size: 11px;
+      letter-spacing: 5px;
+      color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      padding: 20px;
+      background-color: rgb(26, 26, 26);
+    }
+    
+    .container{
+      width: 400px;
+      height: 400px;
+      border: 1px solid lightgray;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      gap: 20px;
+      border-radius: 20px;
+    }
+
+    .upload_container{
+      width: 200px;
+      height: 200px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #upload_img {
+      width: 100px;
+      height: 100px;
+    }
+
+    #result{
+      width: 90%;
+      height: 50px;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: whitesmoke;
+      color: black;
+      text-align: center;
+      cursor: text;
+      font-size: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h2>Upload a QR Code Image</h2>
-  <input type="file" accept="image/*" id="upload">
-  <canvas id="canvas" hidden></canvas>
-  <p>QR Code Result: <span id="result"></span></p>
+  <div class="container">
+    <h2>Upload a QR Code Image</h2>
+    <div class="upload_container" onclick="">
+      <img id="upload_img" src="../images/upload.png">
+      <input type="file" accept="image/*" id="upload" hidden>
+      <canvas id="canvas" hidden></canvas>
+    </div>
+    <p>QR Code Result:</p>
+    <div id="result"></div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
   <script>
+    const upload_container = document.querySelector('.upload_container');
     const upload = document.getElementById('upload');
     const canvas = document.getElementById('canvas');
     const context = canvas.getContext('2d');
     const result = document.getElementById('result');
+
+    upload_container.addEventListener('click', (event) =>{
+      upload.click();
+    })
 
     upload.addEventListener('change', (event) => {
       const file = event.target.files[0];

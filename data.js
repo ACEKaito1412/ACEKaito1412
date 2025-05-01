@@ -95,7 +95,7 @@ function displayStudies(workData) {
             button.target = "_blank";
         }else{
             button =  document.createElement('a');
-            button.classList.add("btn","btn-outline-primary","btn-sm","mt-2");
+            button.classList.add("btn","btn-outline-secondary","btn-sm","mt-2");
             button.innerHTML = "View Certificate";
             button.target = "_blank";
             button.href = `${job.link}`;

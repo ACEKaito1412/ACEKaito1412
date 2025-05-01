@@ -16,128 +16,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        /* background-color: #363741; */
-        background: radial-gradient(
-          circle,
-          rgba(11, 0, 36, 1) 0%,
-          rgba(9, 56, 121, 1) 78%,
-          rgba(36, 10, 156, 1) 100%
-        );
-        overflow-x: hidden;
-      }
-
-      * {
-        padding: 0;
-        margin: 0;
-      }
-
-      #profile-img {
-        transition: 0.3s ease-in;
-      }
-
-      #profile-img:hover {
-        transform: rotate(-15deg);
-      }
-
-      .my-cont {
-        width: 80%;
-      }
-
-      .secondary-text {
-        color: #5a61c2;
-        font-size: 15px;
-      }
-
-      .secondary-title {
-        color: #5a61c2;
-      }
-
-      #logo {
-        display: inline-block; /* Required for transform to work properly */
-        transform: scaleY(1.4);
-        font-family: "Rubik Glitch", system-ui;
-        font-size: 50px;
-        color: #5a61c2;
-      }
-
-      .btn-work {
-        border-radius: 50px 0 0 50px;
-        border: 1px solid black;
-        cursor: pointer;
-      }
-
-      .btn-cert {
-        border-radius: 0 50px 50px 0;
-        border: 1px solid black;
-        cursor: pointer;
-      }
-
-      .tech-item {
-        height: 90px;
-        border: 2px solid rgba(0, 0, 0, 0.06);
-        border-radius: 5px;
-      }
-
-      .tech-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-      }
-
-      #particle-container {
-        position: relative;
-        z-index: 1;
-      }
-
-      .particle {
-        position: absolute;
-        z-index: -1;
-        width: 100px; /* Changed from 100px to 10px */
-        height: 100px; /* Changed from 100px to 10px */
-        background-color: #dedede0e;
-        border-radius: 50%;
-        pointer-events: none;
-        transform: translate(-50%, -50%);
-        animation: particle-animation 1s ease-out forwards; /* Added animation */
-      }
-
-      #contact-btn{
-        background: transparent;
-        transition: 0.6s ease;
-      }
-
-      #contact-btn:hover{
-        box-shadow: -5px 13px 101px 29px rgb(141, 140, 170);
-        border: 3px solid white;
-      }
-
-      @keyframes particle-animation {
-        0% {
-          opacity: 1;
-          transform: translate(-50%, -50%) scale(1);
-        }
-        100% {
-          opacity: 0;
-          transform: translate(-50%, -50%) scale(0.5); /* Fade out and shrink */
-        }
-      }
-
-      .animate__swing {
-        -webkit-transform-origin: top center;
-        transform-origin: top center;
-        -webkit-animation-name: swing;
-        animation-name: swing;
-      }
-
-      @media (min-width: 319px) and (max-width: 480px) {
-        .tech-container {
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body id="particle-container">
     <section>
@@ -186,13 +65,12 @@
               id="profile-img"
               src="./profile.jpg"
               class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
               width="200"
               loading="lazy"
             />
           </div>
           <div class="col-12 col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #14FFEC;">
               Hi,<br />
               I’m <span id="">Jhun Carlo</span>,
             </h1>
@@ -206,7 +84,7 @@
               <a
                 href="./index.pdf"
                 type="button"
-                class="btn col-12 col-md-5 btn-outline-primary btn-sm px-4 me-md-2 d-flex justify-content-center align-items-center opacity-75"
+                class="btn col-12 col-md-5 btn-outline-secondary btn-sm px-4 me-md-2 d-flex justify-content-center align-items-center opacity-75 secondary-text"
                 download
               >
                 Resume
@@ -243,31 +121,24 @@
           <div class="col-lg-8 tech-container">
             <div class="tech-item py-2 text-center m-2 rounded">
               <img width="50px" id="net" src="./images/dotnet.png" />
-              <p class="text-secondary opacity-75">.NET</p>
             </div>
             <div class="tech-item py-2 text-center m-2 rounded">
               <img width="50px" id="c-sharp" src="./images/c-sharp.png" />
-              <p class="text-secondary opacity-75">C#</p>
             </div>
             <div class="tech-item py-2 text-center m-2 rounded">
               <img width="50px" id="python" src="./images/python.png" />
-              <p class="text-secondary opacity-75">Python</p>
             </div>
             <div class="tech-item py-2 text-center m-2 rounded">
               <img width="50px" id="java" src="./images/java.png" />
-              <p class="text-secondary opacity-75">Java</p>
             </div>
             <div class="tech-item py-2 text-center m-2 rounded">
               <img width="50px" id="git" src="./images/git.svg" />
-              <p class="text-secondary opacity-75">Git</p>
             </div>
             <div class="tech-item py-2 text-center m-2 rounded">
               <img id="sql" src="./images/sql.svg" width="50px" />
-              <p class="text-secondary opacity-75">SQL</p>
             </div>
             <div class="tech-item py-2 text-center m-2 rounded">
               <img width="50px" height="50px" id="php" src="./images/php.png" />
-              <p class="text-secondary opacity-75">PHP</p>
             </div>
           </div>
         </div>
@@ -347,7 +218,7 @@
                 style="line-height: 2px"
               >
                 <p
-                  class="fw-bold secondary-text border"
+                  class="fw-bold secondary-text"
                   style="font-size: 13px"
                 >
                   Python
@@ -363,7 +234,7 @@
                 </p>
               </div>
               <div>
-                <a href="#" class="btn btn-outline-primary btn-sm"
+                <a href="#" class="btn btn-outline-secondary btn-sm"
                   >Check on GitHub ></a
                 >
               </div>
@@ -405,7 +276,7 @@
                 </p>
               </div>
               <div>
-                <a href="#" class="btn btn-outline-primary btn-sm"
+                <a href="#" class="btn btn-outline-secondary btn-sm"
                   >Check on GitHub ></a
                 >
               </div>
@@ -444,7 +315,7 @@
                 </p>
               </div>
               <div>
-                <a href="#" class="btn btn-outline-primary btn-sm"
+                <a href="#" class="btn btn-outline-secondary btn-sm"
                   >Check on GitHub ></a
                 >
               </div>

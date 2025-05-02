@@ -72,7 +72,7 @@ function displayStudies(workData) {
         const div_third = document.createElement("div");
         const field = document.createElement("h6");
         const institution = document.createElement("p");
-        const topic = document.createElement('p');
+        const topic = document.createElement('div');
         
 
         div_main.classList.add("d-flex", "gap-3", "py-3", "border-0", "bg-transparent");
@@ -81,7 +81,7 @@ function displayStudies(workData) {
 
         field.classList.add("mb-0","text-uppercase");
         institution.classList.add("mb-0", "opacity-75", "text-secondary");
-        topic.classList.add("mb-0", "secondary-text", "fw-bold" ,"opacity-75");
+        topic.classList.add("mb-0", "secondary-text", "fw-bold" ,"opacity-75", "d-flex", "flex-wrap");
         
         field.innerHTML = `${job.field}`;
         institution.innerHTML = `${job.institution}`;
@@ -89,10 +89,11 @@ function displayStudies(workData) {
         var button;
         if(job.link == ""){
             button =  document.createElement('button');
-            button.classList.add("btn","btn-outline-secondary","btn-sm","mt-2");
+            button.classList.add("btn","btn-secondary","btn-sm","mt-2");
             button.dissabled = true;
             button.innerHTML = "View Certificate";
             button.target = "_blank";
+            button.style.cursor = "not-allowed"
         }else{
             button =  document.createElement('a');
             button.classList.add("btn","btn-outline-secondary","btn-sm","mt-2");
@@ -108,6 +109,7 @@ function displayStudies(workData) {
         topic_list.forEach((name) => {
             const span = document.createElement("span");
             span.classList.add("me-2");
+
             span.innerHTML = name;
 
             topic.appendChild(span)

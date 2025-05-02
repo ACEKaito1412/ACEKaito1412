@@ -1,11 +1,13 @@
 body {
-  background-color: #212121;
+  background-color: #1B262C;
   /* background: radial-gradient(
     circle,
     rgba(11, 0, 36, 1) 0%,
     rgba(9, 56, 121, 1) 78%,
     rgba(36, 10, 156, 1) 100%
   ); */
+
+  font-family: "Ubuntu Mono", monospace;
   overflow-x: hidden;
 }
 
@@ -26,6 +28,11 @@ body {
   width: 80%;
 }
 
+
+.border-outline-color{
+  border-color: #3FC1C9;
+}
+
 .secondary-text {
   color: #0D7377;
   font-size: 15px;
@@ -33,6 +40,7 @@ body {
 
 .secondary-title {
   color: #0D7377;
+  font-weight: bold;
 }
 
 #logo {
@@ -57,11 +65,13 @@ body {
 
 .tech-item {
   border: 2px solid rgba(0, 0, 0, 0.06);
+  background-color: rgba(82, 96, 96, 0.201);
   border-radius: 5px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .tech-container {
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -75,9 +85,9 @@ body {
 .particle {
   position: absolute;
   z-index: -1;
-  width: 100px; /* Changed from 100px to 10px */
-  height: 100px; /* Changed from 100px to 10px */
-  background-color: #dedede0e;
+  width: 200px; /* Changed from 100px to 10px */
+  height: 200px; /* Changed from 100px to 10px */
+  background-color: #1514140e;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -92,6 +102,11 @@ body {
 #contact-btn:hover{
   box-shadow: -5px 13px 101px 29px rgb(141, 140, 170);
   border: 3px solid white;
+}
+
+.active {
+  background-color: rgba(0, 255, 255, 0.384);
+  color: black;
 }
 
 @keyframes particle-animation {

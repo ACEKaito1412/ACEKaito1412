@@ -89,11 +89,12 @@ function displayStudies(workData) {
         var button;
         if(job.link == ""){
             button =  document.createElement('button');
-            button.classList.add("btn","btn-secondary","btn-sm","mt-2");
+            button.classList.add("btn","btn-sm", "btn-outline-secondary", "no-hover" ,"mt-2");
             button.dissabled = true;
             button.innerHTML = "View Certificate";
             button.target = "_blank";
-            button.style.cursor = "not-allowed"
+            button.style.cursor = "not-allowed";
+            button.style.opacity = "0.5";
         }else{
             button =  document.createElement('a');
             button.classList.add("btn","btn-outline-secondary","btn-sm","mt-2");

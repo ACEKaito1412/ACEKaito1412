@@ -26,6 +26,18 @@
       "link" : "https://cs50.harvard.edu/certificates/bf822fe6-c29f-43ed-9595-113cd3f6ab69"
     },
     {
+        "field": "100 Days of Code: Python Pro Bootcamp",
+        "institution": "Udemy",
+        "topics": [
+          "Python",
+          "Python Fundamentals",
+          "Data Analysis",
+          "API Development",
+          "SQL",
+        ],
+        "link" : "https://www.udemy.com/certificate/UC-e49cec45-cdf6-4231-a6fb-51fb5e0db308"
+    },
+    {
       "field": "Foundational C# with Microsoft",
       "institution": "freeCodeCamp | Microsoft",
       "topics": ["C# Fundamentals", "Data Types", "Control Structures", "OOP"],

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roulette</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./particle.css" />
+    <style>
+      .container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 600px;
+        border-radius: 0px 10px 10px 10px;
+        background: transparent;
+        border: 1px solid white;
+        position: relative;
+        padding: 20px;
+        margin: 0 13px;
+      }
+      #roulette_game {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+
+      .spin_container {
+        text-align: right;
+      }
+
+      #container-2{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+      }
+      #bet-controls{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+      }
+      #prev_container{
+        display: flex;
+        border: 1px solid white;
+        height: 20px;
+        padding: 5px;
+        gap:5px;
+      }
+
+      .prev_color{
+        width: 10px;
+        height: 20px;
+        background-color: red;
+      }
+
+      #roulette_logo{
+        padding: 5px;
+        background-color: wheat;
+        border-radius:65px;
+        border: 10px solid black;
+        position: absolute;
+        bottom: -65px;
+        left: -65px;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div id="title-container">
+        <h1 id="score">$ 1000</h1>
+      </div>
+      <div>
+        <div id="roulette_game">
+          <div id="wheel-container">
+            <div id="wheel"></div>
+            <div class="marker"></div>
+          </div>
+          <div id="result"><h2 id="result_text">Winner Green</h2></div>
+          <div id="container-2">
+            <div id="bet-controls">
+              <div id="prev_container">
+                <div class="prev_color"></div>
+                <div class="prev_color" style="background: green;"></div>
+                <div class="prev_color" style="background-color: blue;"></div>
+                <div class="prev_color" style="background-color: blue;"></div>
+              </div>
+              <div id="controls">
+                <button
+                  class="color-btn"
+                  style="background-color: red"
+                  onclick="selectColor('red')"
+                >
+                  Red
+                </button>
+                <button
+                  class="color-btn"
+                  style="background-color: green"
+                  onclick="selectColor('green')"
+                >
+                  Green
+                </button>
+                <button
+                  class="color-btn"
+                  style="background-color: blue"
+                  onclick="selectColor('blue')"
+                >
+                  Blue
+                </button>
+                <button
+                  class="color-btn"
+                  style="background-color: yellow; color: black"
+                  onclick="selectColor('yellow')"
+                >
+                  Yellow
+                </button>
+              </div>
+              <div id="bet-container">
+                <button class="bet-btn" onclick="selectBet(25)">25</button>
+                <button class="bet-btn" onclick="selectBet(50)">50</button>
+                <button class="bet-btn" onclick="selectBet(75)">75</button>
+                <button class="bet-btn" onclick="selectBet(100)">100</button>
+              </div>
+            </div>
+            
+            <div class="spin_container">
+              <button id="spin-btn" onclick="spinWheel()">SPIN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img id="roulette_logo" src="./roulette.png" alt="" srcset="">
+    </section>
+
+    <script src="./particle.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

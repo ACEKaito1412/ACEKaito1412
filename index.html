@@ -20,10 +20,12 @@
   </head>
   <body id="particle-container">
     <section>
-      <nav class="container navbar navbar-expand-lg mb-sm-3 col-10 col-sm-7 border-bottom">
+      <nav
+        class="container navbar navbar-expand-lg mb-sm-3 col-10 col-sm-7 border-bottom"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" id="logo" href="#">J</a>
-          <a class="nav-link" aria-current="page" href="#experiences">
+          <a class="navbar-brand" id="logo" href="/">J</a>
+          <a class="nav-link" aria-current="page" href="#experiences" onclick="showDiv('work')">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -110,19 +112,19 @@
                   id="contact-btn"
                   class="ms-1 p-1 border border-outline d-flex justify-content-center rounded"
                   href="mailto:macdon.jc.bscs@gmail.com"
-                  ><img src="./images/email.svg" alt="email" width="22px"
+                  ><img src="images/envelope.png" alt="email" width="22px"
                 /></a>
                 <a
                   id="contact-btn"
                   class="ms-1 p-1 border border-outline d-flex justify-content-center rounded"
                   href="https://github.com/ACEKaito1412/"
-                  ><img src="./images/github.svg" alt="github" width="22px"
+                  ><img src="images/github.png" alt="github" width="22px"
                 /></a>
                 <a
                   id="contact-btn"
                   class="ms-1 p-1 border border-outline d-flex justify-content-center rounded"
                   href="https://www.linkedin.com/in/macdon-jhun-carlo-34670a26b?trk=contact-info"
-                  ><img src="./images/linkedin.svg" alt="linkedin" width="22px"
+                  ><img src="images/linkedin.png" alt="linkedin" width="22px"
                 /></a>
               </div>
             </div>
@@ -130,27 +132,13 @@
         </div>
         <div class="d-flex justify-content-center row pb-3">
           <div class="col-lg-8 tech-container">
-            <div class="tech-item py-2 text-center m-2 rounded">
-              <img width="50px" id="net" src="./images/dotnet.png" />
-            </div>
-            <div class="tech-item py-2 text-center m-2 rounded">
-              <img width="50px" id="c-sharp" src="./images/c-sharp.png" />
-            </div>
-            <div class="tech-item py-2 text-center m-2 rounded">
-              <img width="50px" id="python" src="./images/python.png" />
-            </div>
-            <div class="tech-item py-2 text-center m-2 rounded">
-              <img width="50px" id="java" src="./images/java.png" />
-            </div>
-            <div class="tech-item py-2 text-center m-2 rounded">
-              <img width="50px" id="git" src="./images/git.svg" />
-            </div>
-            <div class="tech-item py-2 text-center m-2 rounded">
-              <img id="sql" src="./images/sql.svg" width="50px" />
-            </div>
-            <div class="tech-item py-2 text-center m-2 rounded">
-              <img width="50px" height="50px" id="php" src="./images/php.png" />
-            </div>
+            <div class="tech-item py-2 text-center m-2 rounded">.Net</div>
+            <div class="tech-item py-2 text-center m-2 rounded">C#</div>
+            <div class="tech-item py-2 text-center m-2 rounded">Python</div>
+            <div class="tech-item py-2 text-center m-2 rounded">Java</div>
+            <div class="tech-item py-2 text-center m-2 rounded">Git</div>
+            <div class="tech-item py-2 text-center m-2 rounded">SQL</div>
+            <div class="tech-item py-2 text-center m-2 rounded">PHP</div>
           </div>
         </div>
       </div>
@@ -195,144 +183,22 @@
       </div>
     </section>
 
-    <section class="container my-cont py-2 " id="projects">
+    <section class="container my-cont" id="projects">
       <div class="d-flex justify-content-center row col-sm-12">
         <div class="col-lg-9 col-sm-12 mb-2">
           <h2 class="secondary-title fs-sec">Projects</h2>
         </div>
         <div
-          class="row align-items-stretch justify-content-center col-12 col-md-9"
+          class="d-flex flex-wrap row justify-content-center justify-content-md-between col-12 col-md-9 p-0"
+          id="project-container" 
         >
-          <div
-            class="m-2 bg-transparent col-12 d-flex flex-column flex-sm-row justify-content-around align-items-center border p-2 rounded"
-          >
-            <div
-              class="opacity-75 col-sm-4 col-9"
-              style="overflow-x: hidden; overflow-y: hidden; height: 200px"
-            >
-              <img
-                src="./images/filipino.png"
-                height="250px"
-                alt="Filipino Sign Application"
-              />
-            </div>
-            <div class="px-0 col m-3 row d-flex align-content-between">
-              <h5 class="card-title">
-                Filipino Sign Recognition Android Application
-              </h5>
-              <p
-                class="card-text text-secondary d-none d-md-block mt-2"
-              >
-                Android application that recognize Filipino sign language.
-              </p>
-              <div
-                class="d-flex flex-row flex-wrap gap-2 mt-2"
-                style="line-height: 1px"
-              >
-                <p class="fw-bold secondary-text">
-                  Python
-                </p>
-                <p class="fw-bold secondary-text">
-                  TensorFlow
-                </p>
-                <p class="fw-bold secondary-text">
-                  Java
-                </p>
-                <p class="fw-bold secondary-text">
-                  App Development
-                </p>
-              </div>
-              <div>
-                <a href="#" class="btn btn-outline-secondary btn-sm"
-                  >Check on GitHub ></a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="m-2 bg-transparent col-12 d-flex flex-column flex-sm-row justify-content-around align-items-center border p-2 rounded"
-          >
-            <div
-              class="opacity-75 col-sm-4 col-9"
-              style="overflow-x: hidden; overflow-y: hidden; height: 200px"
-            >
-              <img
-                src="./images/x-change.png"
-                height="250px"
-                alt="X-Change Designs"
-              />
-            </div>
-            <div class="px-0 col m-3 row d-flex align-content-between">
-              <h5 class="card-title">X-Change</h5>
-              <p
-                class="card-text text-secondary d-none d-md-block mt-2"
-              >
-                Mobile wallet app project
-              </p>
-              <div
-                class="d-flex flex-row flex-wrap gap-2 mt-2"
-                style="line-height: 2px"
-              >
-                <p class="fw-bold secondary-text">
-                  Java
-                </p>
-                <p class="fw-bold secondary-text">
-                  Firebase
-                </p>
-                <p class="fw-bold secondary-text">
-                  App Development
-                </p>
-              </div>
-              <div>
-                <a href="#" class="btn btn-outline-secondary btn-sm"
-                  >Check on GitHub ></a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="m-2 bg-transparent col-12 d-flex flex-column flex-sm-row justify-content-around align-items-center border p-2 rounded"
-          >
-            <div
-              class="opacity-75 col-sm-4 col-9"
-              style="overflow-x: hidden; overflow-y: hidden; height: 200px"
-            >
-              <img
-                src="./images/resume-ex.png"
-                height="250px"
-                alt="resume ex website"
-              />
-            </div>
-            <div class="px-0 col m-3 row d-flex align-content-between">
-              <h5 class="card-title">Resume-Ex</h5>
-              <p
-                class="card-text text-secondary d-none d-md-block mt-2"
-              >
-                Api for resume extraction using Spacy and OpenAI Api in Python.
-              </p>
-              <div
-                class="d-flex flex-row flex-wrap gap-2 mt-2"
-                style="line-height: 2px"
-              >
-                <p class="fw-bold secondary-text">
-                  Python
-                </p>
-                <p class="fw-bold secondary-text">
-                  Sql
-                </p>
-              </div>
-              <div>
-                <a href="#" class="btn btn-outline-secondary btn-sm"
-                  >Check on GitHub ></a
-                >
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
     <section class="container my-cont mb-4">
-      <div class="container-fluid col-lg-10 border-top d-flex justify-content-center">
+      <div
+        class="container-fluid col-lg-10 border-top d-flex justify-content-center"
+      >
         <div class="col-9">
           <p class="text-secondary text-end">Last Updated : October 10, 2025</p>
         </div>
@@ -348,4 +214,3 @@
     ></script>
   </body>
 </html>
-

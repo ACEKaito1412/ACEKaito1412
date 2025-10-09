@@ -111,8 +111,7 @@ body {
 }
 
 .active {
-  background-color: rgba(82, 96, 96, 0.201);
-  color: black;
+  background-color: rgba(88, 183, 183, 0.201);
 }
 
 @keyframes particle-animation {

@@ -80,6 +80,51 @@
         "start_date": "June 2021",
         "end_date": "October 2022"
       }
-    ]
+    ],
+  "projects" : [
+    {
+      "images_uri" : ["images/filipino.png", "", ""],
+      "title" : "Filipino Sign Recognition",
+      "description" : "Android application that recognize Filipino sign language.",
+      "skills" : [
+        "Python",
+        "Tensorflow",
+        "Machine Learning",
+        "Java"
+      ],
+      "link" : ""
+    },
+    {
+      "images_uri" : ["images/x-change.png", "", ""],
+      "title" : "X-Change",
+      "description" : "Mobile App Wallet using Firebase",
+      "skills" : [
+        "Java",
+        "Firebase",
+        "App Development"
+      ],
+      "link" : ""
+    },
+    {
+      "images_uri" : ["images/resume-ex.png", "", ""],
+      "title" : "Resume-Ex",
+      "description" : "Api for resume extraction using Spacy and OpenAI Api in Python",
+      "skills" : [
+        "Python",
+        "SQL"
+      ],
+      "link" : ""
+    }, 
+    {
+      "images_uri" : ["", "", ""],
+      "title" : "Resume-Ex",
+      "description" : "Api for resume extraction using Spacy and OpenAI Api in Python",
+      "skills" : [
+        "Python",
+        "SQL"
+      ],
+      "link" : ""
+    }
+  ]
 }
 
